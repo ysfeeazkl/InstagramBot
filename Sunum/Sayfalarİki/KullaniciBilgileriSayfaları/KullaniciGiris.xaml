@@ -1,0 +1,28 @@
+﻿<Page x:Class="Sunum.Sayfalarİki.KullaniciBilgileriSayfaları.KullaniciGiris"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sunum.Sayfalarİki.KullaniciBilgileriSayfaları"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="KullaniciGiris">
+
+    <Grid Background="LightGray">
+        <StackPanel Margin="25" HorizontalAlignment="Center" VerticalAlignment="Top" >
+            <TextBlock Text="KULLNICI GİRİŞ PANELİ" FontSize="20" Foreground="DarkOrange" FontWeight="DemiBold" />
+            <Separator Margin="5"/>
+            <StackPanel Margin="0,10,0,0">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="Kullanıcı Adı:" Foreground="DarkOrange" FontWeight="DemiBold"/>
+                    <ComboBox x:Name="cbkgkullaniciadi" Margin="15,0" Width="100" Background="DarkGray"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="Şifre:" Foreground="DarkOrange" FontWeight="DemiBold"/>
+                    <TextBox x:Name="tbkgsifre" Margin="58,0,0,0" Width="100" Background="DarkGray"/>
+                </StackPanel>
+                <Button x:Name="btnkgirisyap" Margin="10" Content="Giriş Yap" Background="DarkGray" Foreground="DarkOrange" FontWeight="DemiBold" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

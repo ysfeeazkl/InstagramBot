@@ -1,0 +1,25 @@
+﻿<Page x:Class="Sunum.Sayfalarİki.ButonSayfaları.İnstagramButonları"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sunum.Sayfalarİki.ButonSayfaları"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="İnstagramButonları">
+
+    <Grid>
+        <StackPanel Background="Gray" >
+            <TextBlock Text="İnstagram" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3"/>
+            <Button x:Name="btnkullanicibilgileri" Background="Gray" Content="Kullanıcı Bilgileri" Height="40" Margin="2,3" Foreground="DarkOrange" FontSize="18" FontWeight="DemiBold"  />
+            <Button x:Name="btnOlaylar" Background="Gray" Content="Olaylar" Height="40" Margin="2,3" Foreground="DarkOrange" FontSize="18" FontWeight="DemiBold"  />
+            <Button x:Name="btnrakipkullanici" Background="Gray" Content="Rakip Sayfa" Height="40" FontSize="18" Margin="2,3" Foreground="DarkOrange" FontWeight="DemiBold"/>
+            <Button x:Name="btnrakippost" Background="Gray" Content="Rakip Post" Height="40" FontSize="18" Margin="2,3" Foreground="DarkOrange" FontWeight="DemiBold"  />
+            <Button x:Name="BTNhastag" Background="Gray" Content="Hashtag Post" Height="40" FontSize="18" Margin="2,3" Foreground="DarkOrange" FontWeight="DemiBold"/>
+            <Button x:Name="btnHesaplar" Background="Gray" Content="Çekilen Hesaplar" Height="40" Margin="2,3" Foreground="DarkOrange" FontSize="18" FontWeight="DemiBold" />
+            <Button x:Name="btnyasaklilar" Background="Gray" Content="Sözcük Listesi" Height="40" Margin="2,3" Foreground="DarkOrange" FontSize="18" FontWeight="DemiBold" />
+            <Button x:Name="btnKaraListe" Background="Gray" Content="Kara Liste" Height="40" Margin="2,3" Foreground="DarkOrange" FontSize="18" FontWeight="DemiBold" />
+
+        </StackPanel>
+    </Grid>
+</Page>

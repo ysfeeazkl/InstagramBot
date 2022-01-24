@@ -1,0 +1,47 @@
+﻿<Page x:Class="Sunum.Sayfalarİki.Sözcükler"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sunum.Sayfalarİki"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Sözcükler">
+
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Engellenen Sözcükler" FontSize="20" Foreground="DarkOrange" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Separator Margin="5"/>
+            <DataGrid x:Name="DgHesaplar" Margin="5" Height="400" AutoGenerateColumns="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Sözcük ad" Binding="{Binding SözcükAd}" Foreground="Black"/>
+                </DataGrid.Columns>
+
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Listeden Kaldır" Click="MenuItem_Click"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+            <Button x:Name="btnListeyiBoşalt" Content="Listeyi Boşalt" Margin="20"/>
+        </StackPanel>
+
+
+        <StackPanel HorizontalAlignment="Center" Grid.Column="1">
+            <TextBlock Text="Sözcük Ekleme" FontSize="20" Foreground="DarkOrange" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Separator Margin="5"/>
+
+            <Separator Margin="5"/>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Sözcük Adı:" Foreground="DarkOrange" FontWeight="DemiBold" />
+                <TextBox x:Name="txtSözcükAd" Margin="15,0" Width="100" Background="DarkGray"/>
+            </StackPanel>
+            <Button x:Name="btnSözcükEkle" Content="Ekle" Margin="10" Background="DarkGray" Foreground="DarkOrange" FontWeight="DemiBold"/>
+        </StackPanel>
+    </Grid>
+</Page>
